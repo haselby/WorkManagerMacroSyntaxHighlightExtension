@@ -19,7 +19,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.wm",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(BREAK|CANCEL|CONTINUE|END|EXIT|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
 			}]
 		},
 		"double-quoted-strings": {
