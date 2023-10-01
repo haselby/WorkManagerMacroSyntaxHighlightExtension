@@ -9,6 +9,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#logical.operator.keywords"
+		},
+		{
 			"include": "#double-quoted-strings"
 		},
 		{
@@ -21,6 +24,13 @@
 				"name": "keyword.control.wm",
 				"match": "\\b(BREAK|CANCEL|CONTINUE|END|EXIT|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
 			}]
+		},
+		"logical.operator.keywords": {
+			"patterns": [{
+				"name": "keyword.operator.logical.wm",
+				"match": "\\b(AND|EXOR|FALSE|NOT|OR|TRUE)\\b"
+			}
+			]
 		},
 		"double-quoted-strings": {
 			"name": "string.quoted.double.wm",
