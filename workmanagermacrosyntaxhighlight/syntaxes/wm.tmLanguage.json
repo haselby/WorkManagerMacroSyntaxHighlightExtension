@@ -12,6 +12,9 @@
 			"include": "#logical.operator.keywords"
 		},
 		{
+			"include": "#function.entity.names"
+		},
+		{
 			"include": "#double-quoted-strings"
 		},
 		{
@@ -29,6 +32,13 @@
 			"patterns": [{
 				"name": "keyword.operator.logical.wm",
 				"match": "\\b(AND|EXOR|FALSE|NOT|OR|TRUE)\\b"
+			}
+			]
+		},
+		"function.entity.names": {
+			"patterns": [{
+				"name": "entity.name.function.wm",
+				"match": "\\b(ABS|ARCCOS|ARCSIN|ARCTAN|COS|DIV|EXP|INT|LG|LN|MOD|PI|RND|ROT|ROUND|SGN|SIN|SQR|SQRT|TAN|TRUNC)\\b"
 			}
 			]
 		},
