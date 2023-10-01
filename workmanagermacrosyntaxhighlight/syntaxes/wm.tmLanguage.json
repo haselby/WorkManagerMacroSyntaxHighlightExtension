@@ -3,6 +3,9 @@
 	"name": "WorkManager Macro",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -24,6 +27,15 @@
 				{
 					"name": "constant.character.escape.wm",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.wm",
+					"begin": "{",
+					"end": "}"
 				}
 			]
 		}
