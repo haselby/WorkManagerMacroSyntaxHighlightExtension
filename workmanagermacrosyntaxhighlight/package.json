@@ -1,0 +1,25 @@
+{
+  "name": "workmanagermacrosyntaxhighlight",
+  "displayName": "WorkManagerMacroSyntaxHighlight",
+  "description": "WorkManager Macro Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "wm",
+      "aliases": ["WorkManager Macro", "wm"],
+      "extensions": [".m"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "wm",
+      "scopeName": "source.m",
+      "path": "./syntaxes/wm.tmLanguage.json"
+    }]
+  }
+}
