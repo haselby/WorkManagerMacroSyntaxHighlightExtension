@@ -22,6 +22,9 @@
 		},
 		{
 			"include": "#single-quoted-strings"
+		},
+		{
+			"include": "#numberic.constants"
 		}
 	],
 	"repository": {
@@ -71,6 +74,14 @@
 				{
 					"name": "constant.character.escape.wm",
 					"match": "\\$."
+				}
+			]
+		},
+		"numberic.constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.wm",
+					"match": "\\b(0x[0-9a-fA-F]+|\\d+)\\b"
 				}
 			]
 		},
