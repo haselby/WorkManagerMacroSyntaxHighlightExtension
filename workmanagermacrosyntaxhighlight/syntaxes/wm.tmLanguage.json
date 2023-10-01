@@ -28,6 +28,15 @@
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.wm",
+					"begin": "{",
+					"end": "}"
+				}
+			]
+		},
 		"control.keywords": {
 			"patterns": [{
 				"name": "keyword.control.wm",
@@ -82,15 +91,6 @@
 				{
 					"name": "constant.numeric.wm",
 					"match": "\\b(0x[0-9a-fA-F]+|\\d+)\\b"
-				}
-			]
-		},
-		"comments": {
-			"patterns": [
-				{
-					"name": "comment.block.wm",
-					"begin": "{",
-					"end": "}"
 				}
 			]
 		}
