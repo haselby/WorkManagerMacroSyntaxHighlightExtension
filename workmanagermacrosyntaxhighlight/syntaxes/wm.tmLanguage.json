@@ -142,6 +142,10 @@
 				{
 					"name": "support.function.inputoutputcontrol.wm",
 					"match": "\\b(AUTO_NEW_SCREEN|BEEP|DEFINE_KEY|DISPLAY|DISPLAY_NO_WAIT|ENTER|NEW_SCREEN|OUTPUT_STRING|TONE|UPDATE_SCREEN|USE_X_CURSOR)\\b"
+				},
+				{
+					"name": "support.function.colorcontrol.wm",
+					"match": "\\b(COLOR|COLOR_LTAB|FORCE_DESKTOP_COLORS|GET_NAMED_COLOR|SET_NAMED_COLOR)\\b"
 				}
 
 			]
