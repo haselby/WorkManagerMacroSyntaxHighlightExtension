@@ -146,6 +146,10 @@
 				{
 					"name": "support.function.colorcontrol.wm",
 					"match": "\\b(COLOR|COLOR_LTAB|FORCE_DESKTOP_COLORS|GET_NAMED_COLOR|SET_NAMED_COLOR)\\b"
+				},
+				{
+					"name": "support.function.editor.wm",
+					"match": "\\b(CONFIGURE_EDITOR|EDIT_ENVIRONMENT|EDIT_FILE|EDIT_MACRO|EDIT_PORT)\\b"
 				}
 
 			]
