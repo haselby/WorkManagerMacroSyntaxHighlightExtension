@@ -6,10 +6,13 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#keywords"
+			"include": "#control.keywords"
 		},
 		{
 			"include": "#logical.operator.keywords"
+		},
+		{
+			"include": "#other.keywords"
 		},
 		{
 			"include": "#function.entity.names"
@@ -22,7 +25,7 @@
 		}
 	],
 	"repository": {
-		"keywords": {
+		"control.keywords": {
 			"patterns": [{
 				"name": "keyword.control.wm",
 				"match": "\\b(BREAK|CANCEL|CONTINUE|END|EXIT|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
@@ -32,6 +35,13 @@
 			"patterns": [{
 				"name": "keyword.operator.logical.wm",
 				"match": "\\b(AND|EXOR|FALSE|NOT|OR|TRUE)\\b"
+			}
+			]
+		},
+		"other.keywords": {
+			"patterns": [{
+				"name": "keyword.other.wm",
+				"match": "\\b(DEFINE|END_DEFINE|LET|LOCAL|PARAMETER)\\b"
 			}
 			]
 		},
