@@ -214,6 +214,42 @@
 				{
 					"name": "support.function.workflowifelse.wm",
 					"match": "\\b(lenght|data|null|defined|in_arcs|out_arcs|in_arc_list|out_arc_list|paths|path_list|node_name|message|return)\\b"
+				},
+				{
+					"name": "support.function.projectrole.wm",
+					"match": "\\b(DMS_ADD_PROJECT _ROLE_PARTICIPANT|DMS_CHECK_APPLICATION _OPERATION_PERMISSION|DMS_CHECK_CREATE _ELEMENT_PERM|DMS_COPY_PROJECT|DMS_CREATE_ELEMENT_IN_PROJECT|DMS_CREATE_PROJECT|DMS_DELETE_PROJECT_ROLE|DMS_GET_GROUP_INFO|DMS_GET_GROUP_LIST|DMS_GET_GROUPS _CONTAINING_GROUP|DMS_GET_GROUPS _CONTAINING_USER|DMS_GET_GROUPS_IN_PROJECT|DMS_GET_GROUPS_IN _PROJECT_ROLE|DMS_GET_PROJECT_INFO|DMS_GET_PROJECT_LIST|DMS_GET_PROJECT_ROLE_INFO|DMS_GET_PROJECT_ROLE_LIST|DMS_GET_PROJECT_ROLES _CONTAINING_GROUP|DMS_GET_PROJECT_ROLES _CONTAINING_PROJECT_ROLE|DMS_GET_PROJECT_ROLES _CONTAINING_USER|DMS_GET_ROLES_IN_PROJECT_ROLE|DMS_GET_SCHEMA_VERSION|DMS_GET_UNIQUE_ROLE_LIST|DMS_LOAD_PROJECT _ROLE_PARTICIPANT|DMS_PROJECT_IDTONAME|DMS_PROJECT_NAMETOID|DMS_SELECT_PROJECT)\\b"
+				},
+				{
+					"name": "support.function.classification.wm",
+					"match": "\\b(ADD_TREE_ATTRIBUTE|CREATE_TREE_LINK|CREATE_TREE_NODE|CURRENT_TREE|DEFINE_TREE|GET_NODE_ATTRIBUTES|MOVE_TREE_NODE|REMOVE_TREE|REMOVE_TREE_LINK|REMOVE_TREE_NODE|SHOW_TREES|UPDATE_TREE_NODE)\\b"
+				},
+				{
+					"name": "support.function.interlink.wm",
+					"match": "\\b()\\b"
+				},
+				{
+					"name": "support.function.mswindows.wm",
+					"match": "\\b(DDE_ADD_TOPIC|DDE_CLOSE|DDE_ENABLE|DDE_EXECUTE|DDE_INITIATE|DDE_REMOVE_TOPIC|DDE_REQUEST|DDE_SEND_ACK|DDE_WITHHOLD_ACK|LOWER_WINDOW|RAISE_WINDOW|SHELL_EXECUTE|WINEXEC|WIN_LOAD_DOC)\\b"
+				},
+				{
+					"name": "support.function.cleanuptablemanagement.wm",
+					"match": "\\b(Dms_cleanup_refresh|Dms_clear_cleanups_to|Dms_get_num_cleanups|Dms_push_cleanup)\\b"
+				},
+				{
+					"name": "support.function.editormanagement.wm",
+					"match": "\\b(Dms_basic_edit_cycle|Dms_class_declare|Dms_class_editor_exist|Dms_class_editor_open|Dms_editor_declare|Dms_editor_exist|Dms_editor_open|Dms_editor_register|Dms_editor_unregister|Dms_editor_update|Dms_get_unique_window_id|Dms_sysatt_view|Dms_sysatt_view_cancel|Dms_sysatt_view_close|Dms_sysatt_view_confirm|Dms_uda_view|Dms_uda_view_cancel|Dms_uda_view_close|Dms_uda_view_confirm|Editor_type_dtab_attributes)\\b"
+				},
+				{
+					"name": "support.function.errortablemanagement.wm",
+					"match": "\\b(Dms_check_errors|Dms_clear_errors|Dms_display_errors|Dms_filter_errors|Dms_get_num_errors|Dms_read_error_msg|Dms_read_error_num|Dms_read_error_sev|Dms_write_error)\\b"
+				},
+				{
+					"name": "support.function.miscellaneousutility.wm",
+					"match": "\\b(Dms_declare_file_type|Dms_get_folder_elid|Dms_get_uda_form|Input_form|Pers_help_key|Dms_register_file_printer|Dms_register_form_printer|Dms_register_table_printer)\\b"
+				},
+				{
+					"name": "support.function.triggermanagement.wm",
+					"match": "\\b(UI_apply_element|UI_create_element|UI_create_ltab|UI_create_packet|UI_demote_element|UI_drop_element|UI_load_window_template|UI_promote_element|UI_select_element)\\b"
 				}
 
 			]
