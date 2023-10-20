@@ -31,6 +31,9 @@
 		},
 		{
 			"include": "#entity.name.type"
+		},
+		{
+			"include": "#variable.other.constant"
 		}
 	],
 	"repository": {
@@ -52,7 +55,7 @@
 		"logical.operator.keywords": {
 			"patterns": [{
 				"name": "keyword.operator.logical.wm",
-				"match": "\\b(AND|EXOR|FALSE|NOT|OR|TRUE)\\b"
+				"match": "\\b(AND|EXOR|NOT|OR)\\b"
 			}
 			]
 		},
@@ -253,6 +256,10 @@
 				{
 					"name": "support.function.triggermanagement.wm",
 					"match": "\\b(UI_apply_element|UI_create_element|UI_create_ltab|UI_create_packet|UI_demote_element|UI_drop_element|UI_load_window_template|UI_promote_element|UI_select_element)\\b"
+				},
+				{
+					"name": "support.function.miscellaneous.wm",
+					"match": "\\b(ALL|CONFIRM|ERROR|FLUSH|HIGHLIGHT|NO_ERROR|ROW|SUBSTR|TITLE|TRIM|USER_TABLE)\\b"
 				}
 			]
 		},
@@ -261,6 +268,14 @@
 				{
 					"name": "entity.name.type.wm",
 					"match": "\\b(TYPE|NUMBER|STRING|COMMAND|FUNCTION|SYMBOL|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER)\\b"
+				}
+			]
+		},
+		"variable.other.constant": {
+			"patterns": [
+				{
+					"name": "variable.other.constant.wm",
+					"match": "\\b(TRUE|FALSE|ON|OFF)\\b"
 				}
 			]
 		}
