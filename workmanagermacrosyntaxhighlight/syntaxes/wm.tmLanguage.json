@@ -225,7 +225,7 @@
 				},
 				{
 					"name": "support.function.interlink.wm",
-					"match": "\\b()\\b"
+					"match": "\\b(ACCEPT_CONNECTION|ACCEPT_NAMED_CONNECTION|CLOSE_ALL_CONNECTION|CLOSE_CONNECTIO|DMSINT|REJECT_CONNECTION)\\b"
 				},
 				{
 					"name": "support.function.mswindows.wm",
