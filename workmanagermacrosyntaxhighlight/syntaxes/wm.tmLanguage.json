@@ -28,6 +28,9 @@
 		},
 		{
 			"include": "#support.functions"
+		},
+		{
+			"include": "#entity.name.type"
 		}
 	],
 	"repository": {
@@ -43,7 +46,7 @@
 		"control.keywords": {
 			"patterns": [{
 				"name": "keyword.control.wm",
-				"match": "\\b(BREAK|CANCEL|CONTINUE|END|EXIT|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
+				"match": "\\b(BREAK|CANCEL|CHECK_FOR_ESC|CONTINUE|ENABLE_ESCAPE|END|EXIT|IGNORE_ESCAPE|INPUT|READ|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
 			}]
 		},
 		"logical.operator.keywords": {
@@ -251,7 +254,14 @@
 					"name": "support.function.triggermanagement.wm",
 					"match": "\\b(UI_apply_element|UI_create_element|UI_create_ltab|UI_create_packet|UI_demote_element|UI_drop_element|UI_load_window_template|UI_promote_element|UI_select_element)\\b"
 				}
-
+			]
+		},
+		"entity.name.type": {
+			"patterns": [
+				{
+					"name": "entity.name.type.wm",
+					"match": "\\b(TYPE|NUMBER|STRING|COMMAND|FUNCTION|SYMBOL|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER)\\b"
+				}
 			]
 		}
 	},
