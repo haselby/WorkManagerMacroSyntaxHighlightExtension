@@ -15,3 +15,9 @@ jobs:
       - name: Build VSIX
         working-directory: ./workmanagermacrosyntaxhighlight
         run: vsce package
+      - name: Upload VSCode Extension Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: VSCode-Extension
+          path: ./workmanagermacrosyntaxhighlight/**/workmanagermacrosyntaxhighlight-\d+\.\d+\.\d+\.vsix
+        
