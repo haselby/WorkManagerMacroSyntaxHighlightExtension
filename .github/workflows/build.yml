@@ -4,19 +4,14 @@ jobs:
     name: Build VS Code Extension
     runs-on: windows-latest
     steps:
-      - run: node --version
-        name: Check Node version
-      - run: npm --version
-        name: Check NPM Version
-      - run: npm install -g @vscode/vsce
-        name: Install required NPM Package
-      - uses: actions/checkout@v3
-        name: Checkout code from GitHub
-      - run: vsce package
+      - name: Check Node version
+        run: node --version
+      - name: Check NPM Version
+        run: npm --version
+      - name: Install required NPM Package
+        run: npm install -g @vscode/vsce
+      - name: Checkout code from GitHub
+        uses: actions/checkout@v3        
+      - name: Build VSIX
         working-directory: ./workmanagermacrosyntaxhighlight
-        name: Build VSIX
-
-      
-
-      
-      
+        run: vsce package
