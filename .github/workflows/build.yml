@@ -1,6 +1,6 @@
 on: push
 jobs: 
-  build-job:
+  build-project:
     name: Build VS Code Extension
     runs-on: windows-latest
     steps:
@@ -20,4 +20,16 @@ jobs:
         with:
           name: VSCode-Extension
           path: workmanagermacrosyntaxhighlight/workmanagermacrosyntaxhighlight-0.0.1.vsix
-        
+  release-project:
+    name: Release VS Code Extension
+    runs-on: windows-latest
+    needs: build-project
+    steps:
+      - name: Download VSCode Extension Artifact
+        uses: action/download-artifact@v3
+        with:
+          name: VSCode-Extension
+      - name: Test artifact download
+        run: ls -R
+          
+  
