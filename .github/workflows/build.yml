@@ -6,7 +6,7 @@ jobs:
       - run: node --version
       - run: npm --version
       - run: npm install -g @vscode/vsce
-      - uses: actionscheckout@v3
+      - uses: actions/checkout@v3
       - name: Build VSIX
         working-directory: ./workmanagermacrosyntaxhighlight
         run: vsce publish
