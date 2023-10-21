@@ -11,3 +11,5 @@ Press F5 key, to launch a new Visual Studio Code running this extension in debug
 
 Note: This results in new instance of Visual Studio Code
 
+
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
