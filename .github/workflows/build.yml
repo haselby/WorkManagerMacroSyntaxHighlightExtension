@@ -1,7 +1,7 @@
 on: push
 jobs: 
   build-job:
-    name: Build VS Code Extension from GitHub Repo
+    name: Build VS Code Extension
     runs-on: windows-latest
     steps:
       - run: node --version
@@ -9,12 +9,13 @@ jobs:
       - run: npm --version
         name: Check NPM Version
       - run: npm install -g @vscode/vsce
-        name: Install Required NPM Package
+        name: Install required NPM Package
       - uses: actions/checkout@v3
-        name: Checkou code from GitHub
-      - name: Build VSIX
+        name: Checkout code from GitHub
+      - run: vsce package
         working-directory: ./workmanagermacrosyntaxhighlight
-        run: vsce package
+        name: Build VSIX
+
       
 
       
