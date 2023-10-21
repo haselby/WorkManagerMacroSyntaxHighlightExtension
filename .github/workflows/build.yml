@@ -26,7 +26,7 @@ jobs:
     needs: build-project
     steps:
       - name: Download VSCode Extension Artifact
-        uses: action/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: VSCode-Extension
       - name: Test artifact download
