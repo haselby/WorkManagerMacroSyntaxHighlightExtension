@@ -19,5 +19,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: VSCode-Extension
-          path: ./workmanagermacrosyntaxhighlight/**/workmanagermacrosyntaxhighlight-\d+\.\d+\.\d+\.vsix
+          path: workmanagermacrosyntaxhighlight/**/workmanagermacrosyntaxhighlight-\d+\.\d+\.\d+\.vsix
         
