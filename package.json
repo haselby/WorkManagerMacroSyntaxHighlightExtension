@@ -24,8 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/haselby/WorkManagerMacroSyntaxHighlightExtension.git"
+    "url": "https://github.com/haselby/workmanagermacrosyntaxhighlight.git"
   },
   "license": "MPL-2.0",
-  "homepage": "https://github.com/haselby/WorkManagerMacroSyntaxHighlightExtension/blob/main/README.md"
+  "homepage": "https://github.com/haselby/workmanagermacrosyntaxhighlight"
 }

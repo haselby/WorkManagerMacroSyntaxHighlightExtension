@@ -13,13 +13,12 @@ jobs:
       - name: Checkout code from GitHub
         uses: actions/checkout@v3        
       - name: Build VSIX
-        working-directory: ./workmanagermacrosyntaxhighlight
         run: vsce package
       - name: Upload VSCode Extension Artifact
         uses: actions/upload-artifact@v3
         with:
           name: VSCode-Extension
-          path: workmanagermacrosyntaxhighlight/workmanagermacrosyntaxhighlight-0.0.1.vsix
+          path: workmanagermacrosyntaxhighlight-0.0.1.vsix
   release-project:
     name: Release VS Code Extension
     runs-on: windows-latest
