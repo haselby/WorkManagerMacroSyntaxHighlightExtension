@@ -36,6 +36,9 @@
 			"include": "#entity.name.type"
 		},
 		{
+			"include": "#storage"
+		},
+		{
 			"include": "#variable"
 		},
 		{
@@ -281,6 +284,18 @@
 				{
 					"name": "entity.name.type.wm",
 					"match": "\\b(TYPE|NUMBER|STRING|COMMAND|FUNCTION|SYMBOL|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER)\\b"
+				}
+			]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"name": "storage.global.wm",
+					"match": "\\b[A-Z][a-zA-Z0-9_]*global[a-zA-Z0-9_]*\\b"
+				},
+				{
+					"name": "storage.global.temp.wm",
+					"match": "\\bDms_return_val[0-9]*\\b"
 				}
 			]
 		},
