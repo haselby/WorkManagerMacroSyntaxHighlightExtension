@@ -33,6 +33,9 @@
 			"include": "#entity.name.type"
 		},
 		{
+			"include": "#variable"
+		},
+		{
 			"include": "#variable.other.constant"
 		}
 	],
@@ -268,6 +271,14 @@
 				{
 					"name": "entity.name.type.wm",
 					"match": "\\b(TYPE|NUMBER|STRING|COMMAND|FUNCTION|SYMBOL|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER)\\b"
+				}
+			]
+		},
+		"variable": {
+			"patterns": [
+				{
+					"name": "variable.wm",
+					"match": "\\b(?!Csi)[A-Z][a-zA-Z0-9_]*\\b"
 				}
 			]
 		},
