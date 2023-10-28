@@ -24,7 +24,7 @@
 			"include": "#numberic-constants"
 		},
 		{
-			"include": "#other.constants"
+			"include": "#language-constants"
 		},
 		{
 			"include": "#function-supports"
@@ -99,11 +99,11 @@
 				}
 			]
 		},
-		"other-constants": {
+		"language-constants": {
 			"patterns": [
 				{
-					"name": "variable.other.constant.wm",
-					"match": "\\b(TRUE|FALSE|ON|OFF)\\b"
+					"name": "constant.language.wm",
+					"match": "\\b(TRUE|FALSE|ON|OFF|DEL_OLD|STR|ARITHM_FUNCTION|COMMAND|FUNCTION|LITERAL|MACRO|NUMBER|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER|STRING|SYMBOL)\\b"
 				}
 			]
 		},
