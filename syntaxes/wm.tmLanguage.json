@@ -33,7 +33,7 @@
 			"include": "#variables"
 		},
 		{
-			"include": "#macro.function-name-entities"
+			"include": "#pdmreplicator-macro-function-name-entities"
 		},
 		{
 			"include": "#global-type-storages"
@@ -279,11 +279,19 @@
 				}
 			]
 		},
-		"macro.function-name-entities": {
+		"pdmreplicator-macro-function-name-entities": {
 			"patterns": [
 				{
-					"name": "entity.name.type.macro.wm",
-					"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
+					"name": "entity.name.type.macro1.wm",
+					"match": "\\bCsi(c)?_dd_g[^l][a-km-z][a-z0-9_]*\\b"
+				},
+				{
+					"name": "entity.name.type.macro2.wm",
+					"match": "\\bCsi(c)?_dd_[^g][a-fh-z][a-z0-9_]*\\b"
+				},
+				{
+					"name": "entity.name.type.macro3.wm",
+					"match": "\\b(Users_add|Set_dd_enumstr_default|csi_pdmi_lib_input_dir|Csic_pdmi_lib_input_dir|Csi_pdmi_lib_input_dir|custom|replication_delete|ui_cust)\\b"
 				}
 			]
 		},
