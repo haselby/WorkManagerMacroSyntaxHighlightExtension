@@ -6,6 +6,12 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#double-quoted-strings"
+		},
+		{
+			"include": "#single-quoted-strings"
+		},
+		{
 			"include": "#control-keywords"
 		},
 		{
@@ -19,12 +25,6 @@
 		},
 		{
 			"include": "#type-name-entities"
-		},
-		{
-			"include": "#double-quoted-strings"
-		},
-		{
-			"include": "#single-quoted-strings"
 		},
 		{
 			"include": "#numberic-constants"
@@ -49,6 +49,28 @@
 					"name": "comment.block.wm",
 					"begin": "{",
 					"end": "}"
+				}
+			]
+		},
+		"double-quoted-strings": {
+			"name": "string.quoted.double.wm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.wm",
+					"match": "\\$."
+				}
+			]
+		},
+		"single-quoted-strings": {
+			"name": "string.quoted.single.wm",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.wm",
+					"match": "\\$."
 				}
 			]
 		},
@@ -81,28 +103,6 @@
 				{
 					"name": "entity.name.type.wm",
 					"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
-				}
-			]
-		},
-		"double-quoted-strings": {
-			"name": "string.quoted.double.wm",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.wm",
-					"match": "\\$."
-				}
-			]
-		},
-		"single-quoted-strings": {
-			"name": "string.quoted.single.wm",
-			"begin": "'",
-			"end": "'",
-			"patterns": [
-				{
-					"name": "constant.character.escape.wm",
-					"match": "\\$."
 				}
 			]
 		},
