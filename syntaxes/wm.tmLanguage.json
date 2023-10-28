@@ -275,7 +275,11 @@
 			"patterns": [
 				{
 					"name": "variable.wm",
-					"match": "\\b(?!Csi)[A-Z][a-zA-Z0-9_]*\\b"
+					"match": "\\b(?!Csi)(?!Set_dd)[A-Z][a-z0-9_]*\\b"
+				},
+				{
+					"name": "variable.pdmreplicator.wm",
+					"match": "\\b(Csi_module|Csi_option1|Csi_option2)\\b"
 				}
 			]
 		},
@@ -291,7 +295,7 @@
 				},
 				{
 					"name": "entity.name.type.macro3.wm",
-					"match": "\\b(Users_add|Set_dd_enumstr_default|csi_pdmi_lib_input_dir|Csic_pdmi_lib_input_dir|Csi_pdmi_lib_input_dir|custom|replication_delete|ui_cust)\\b"
+					"match": "\\b(Csi_system_config_utilities|Csi_system_config_create_entry|Csi_system_config_delete_entry|Csi_system_config_find_entries|Csi_system_config_find_entry|Csi_update_deleted_elements|Csic_update_deleted_elements|Users_add|Set_dd_enumstr_default|csi_pdmi_lib_input_dir|Csic_pdmi_lib_input_dir|Csi_pdmi_lib_input_dir|custom|replication_delete|ui_cust)\\b"
 				}
 			]
 		},
