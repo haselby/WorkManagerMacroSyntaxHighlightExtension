@@ -21,25 +21,22 @@
 			"include": "#other-keywords"
 		},
 		{
-			"include": "#function-name-entities"
-		},
-		{
-			"include": "#type-name-entities"
-		},
-		{
 			"include": "#numberic-constants"
+		},
+		{
+			"include": "#other.constants"
 		},
 		{
 			"include": "#function-supports"
 		},
 		{
-			"include": "#type-storages"
+			"include": "#macro.function-name-entities"
+		},
+		{
+			"include": "#global-type-storages"
 		},
 		{
 			"include": "#variables"
-		},
-		{
-			"include": "#other.constants"
 		}
 	],
 	"repository": {
@@ -94,18 +91,6 @@
 			}
 			]
 		},
-		"function-name-entities": {
-			"patterns": [
-				{
-				"name": "entity.name.function.wm",
-				"match": "\\b(ABS|ARCCOS|ARCSIN|ARCTAN|COS|DIV|EXP|INT|LG|LN|MOD|PI|RND|ROT|ROUND|SGN|SIN|SQR|SQRT|TAN|TRUNC)\\b"
-				},
-				{
-					"name": "entity.name.type.wm",
-					"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
-				}
-			]
-		},
 		"numberic-constants": {
 			"patterns": [
 				{
@@ -114,8 +99,20 @@
 				}
 			]
 		},
+		"other-constants": {
+			"patterns": [
+				{
+					"name": "variable.other.constant.wm",
+					"match": "\\b(TRUE|FALSE|ON|OFF)\\b"
+				}
+			]
+		},
 		"function-supports":{
 			"patterns": [
+				{
+					"name": "support.function.mathematical.wm",
+					"match": "\\b(ABS|ARCCOS|ARCSIN|ARCTAN|COS|DIV|EXP|INT|LG|LN|MOD|PI|RND|ROT|ROUND|SGN|SIN|SQR|SQRT|TAN|TRUNC)\\b"
+				},
 				{
 					"name": "support.function.logicaltables.wm",
 					"match": "\\b(CATALOG_TO_LTAB|COLOR_LTAB|CONNECT_TABLE|CONNECT_WINDOW|COPY_LTAB|COPY_LTAB_ALL|COPY_LTAB_COL_NAMES|COPY_LTAB_ROW|COPY_LTAB_TITLES|CREATE_LTAB|CSL_LINE_TO_LTAB|CSL_TO_LTAB|DELETE_LTAB|DELETE_LTAB_ROW|DMS_FIND_CACHEID_ROW|DMS_GENERATE_CACHEID_FOR_ROW_NUMBER|DMS_IS_USER_CACHEID|EXPAND_LTAB_INDENT|GET_LAST_PICK_LTAB|GET_LAST_PICK_LTAB_COLUMN|GET_LAST_PICK_LTAB_ROW|GET_LAST_PICK_LTAB_TITLE|HIGHLIGHT_LTAB|INSERT_LTAB_ROW|LOOKUP_BY_CACHEID|LOOKUP_REGISTER|LOOKUP_UNREGISTER|LTAB_COLUMNS|LTAB_COL_NAMES|LTAB_LIST|LTAB_ROWS|LTAB_TITLES|LTAB_TO_CSL|LTAB_TO_CSL_LINE|LTAB_TO_TABSL|POP_DOWN_LTAB|POP_UP_LTAB|READ_LTAB|SAVE_LTAB|SCROLL_LTAB|SEARCH_LTAB|SECURE_LTAB|SELECT_FROM_LTAB|SORT_LTAB|WRITE_LTAB)\\b"
@@ -274,7 +271,15 @@
 				}
 			]
 		},
-		"type-storages": {
+		"macro.function-name-entities": {
+			"patterns": [
+				{
+					"name": "entity.name.type.macro.wm",
+					"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
+				}
+			]
+		},
+		"global-type-storages": {
 			"patterns": [
 				{
 					"name": "storage.global.wm",
@@ -291,14 +296,6 @@
 				{
 					"name": "variable.wm",
 					"match": "\\b(?!Csi)[A-Z][a-zA-Z0-9_]*\\b"
-				}
-			]
-		},
-		"other-constants": {
-			"patterns": [
-				{
-					"name": "variable.other.constant.wm",
-					"match": "\\b(TRUE|FALSE|ON|OFF)\\b"
 				}
 			]
 		}
