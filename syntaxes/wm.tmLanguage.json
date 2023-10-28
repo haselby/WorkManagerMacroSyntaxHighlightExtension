@@ -6,19 +6,19 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#control.keywords"
+			"include": "#control-keywords"
 		},
 		{
-			"include": "#logical.operator.keywords"
+			"include": "#logical-operator-keywords"
 		},
 		{
-			"include": "#other.keywords"
+			"include": "#other-keywords"
 		},
 		{
-			"include": "#function.names.entity"
+			"include": "#function-name-entities"
 		},
 		{
-			"include": "#type.names.entity"
+			"include": "#type-name-entities"
 		},
 		{
 			"include": "#double-quoted-strings"
@@ -27,22 +27,19 @@
 			"include": "#single-quoted-strings"
 		},
 		{
-			"include": "#numberic.constants"
+			"include": "#numberic-constants"
 		},
 		{
-			"include": "#support.functions"
+			"include": "#function-supports"
 		},
 		{
-			"include": "#entity.name.type"
+			"include": "#type-storages"
 		},
 		{
-			"include": "#storage"
+			"include": "#variables"
 		},
 		{
-			"include": "#variable"
-		},
-		{
-			"include": "#variable.other.constant"
+			"include": "#other.constants"
 		}
 	],
 	"repository": {
@@ -55,38 +52,36 @@
 				}
 			]
 		},
-		"control.keywords": {
+		"control-keywords": {
 			"patterns": [{
 				"name": "keyword.control.wm",
 				"match": "\\b(BREAK|CANCEL|CHECK_FOR_ESC|CONTINUE|ENABLE_ESCAPE|END|EXIT|IGNORE_ESCAPE|INPUT|READ|RETURN|WAIT|IF|ELSE_IF|ELSE|END_IF|LOOP|EXIT_IF|END_LOOP|REPEAT|UNTIL|WHILE|END_WHILE)\\b"
 			}]
 		},
-		"logical.operator.keywords": {
+		"logical-operator-keywords": {
 			"patterns": [{
 				"name": "keyword.operator.logical.wm",
 				"match": "\\b(AND|EXOR|NOT|OR)\\b"
 			}
 			]
 		},
-		"other.keywords": {
+		"other-keywords": {
 			"patterns": [{
 				"name": "keyword.other.wm",
 				"match": "\\b(DEFINE|END_DEFINE|LET|LOCAL|PARAMETER)\\b"
 			}
 			]
 		},
-		"function.name.entity": {
-			"patterns": [{
+		"function-name-entities": {
+			"patterns": [
+				{
 				"name": "entity.name.function.wm",
 				"match": "\\b(ABS|ARCCOS|ARCSIN|ARCTAN|COS|DIV|EXP|INT|LG|LN|MOD|PI|RND|ROT|ROUND|SGN|SIN|SQR|SQRT|TAN|TRUNC)\\b"
-			}
-			]
-		},
-		"type.names.entity": {
-			"patterns": [{
-				"name": "entity.name.type.wm",
-				"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
-			}
+				},
+				{
+					"name": "entity.name.type.wm",
+					"match": "\\b(Csi(c_)?[a-z0-9_]*)\\b"
+				}
 			]
 		},
 		"double-quoted-strings": {
@@ -111,7 +106,7 @@
 				}
 			]
 		},
-		"numberic.constants": {
+		"numberic-constants": {
 			"patterns": [
 				{
 					"name": "constant.numeric.wm",
@@ -119,7 +114,7 @@
 				}
 			]
 		},
-		"support.functions":{
+		"function-supports":{
 			"patterns": [
 				{
 					"name": "support.function.logicaltables.wm",
@@ -279,15 +274,7 @@
 				}
 			]
 		},
-		"entity.name.type": {
-			"patterns": [
-				{
-					"name": "entity.name.type.wm",
-					"match": "\\b(TYPE|NUMBER|STRING|COMMAND|FUNCTION|SYMBOL|PNT|PNT3|PSEUDO_COMMAND|QUALIFIER)\\b"
-				}
-			]
-		},
-		"storage": {
+		"type-storages": {
 			"patterns": [
 				{
 					"name": "storage.global.wm",
@@ -299,7 +286,7 @@
 				}
 			]
 		},
-		"variable": {
+		"variables": {
 			"patterns": [
 				{
 					"name": "variable.wm",
@@ -307,7 +294,7 @@
 				}
 			]
 		},
-		"variable.other.constant": {
+		"other-constants": {
 			"patterns": [
 				{
 					"name": "variable.other.constant.wm",
