@@ -154,6 +154,18 @@
 					"match": "\\b(ATTACH_DISPLAY_TABLE_FIELD|CHANGE_TABLE_SIZE|CONNECT_TABLE|COPY_TABLE|DELETE_TABLE|DMS_EDIT_FIELD|GET_LAST_PICK_COUNT|GET_LAST_PICK_DTAB|GET_LAST_PICK_DTAB_COLUMN|GET_LAST_PICK_DTAB_ROW|MOVE_TABLE|PRINT_TABLE|SAVE_TABLE|SCROLL_TABLE_HORIZONTAL|SECURE_TABLE|SHARE_TABLE_COLUMNS|SHOW_TABLE|TABLE_COLUMN|TABLE_COLUMN_ACTION|TABLE_COLUMN_WIDTH_STRIDE|TABLE_FIXED_COLUMNS|TABLE_LAYOUT|TABLE_SCROLLABLE_COLUMN|TABLE_SCROLL_STEP|TABLE_TITLE)\\b"
 				},
 				{
+					"name": "support.function.tablescrollablecolumn.wm",
+					"match": "\\b(dtab|dtab_col_num|ltab_col_num|ltab_col_name|FG_COLOR|BG_COLOR|ADJUST|LEFT|RIGHT|CENTER|WIDTH|ALIAS|FORMAT|format_precision|format_string|FIELD_TYPE|PUSHBUTTON|EDITFIELD|DEFAULT|ACTION|TITLE_FG_COLOR|TITLE_BG_COLOR|TITLE_ACTION|TITLE_FIELD_TYPE|PUSHBUTTON|EDITFIELD)\\b"
+				},
+				{
+					"name": "support.function.tablemisc.wm",
+					"match": "\\b(APPEND|SCREEN|PROMPT_LINE|SOLID|UPPER|LOWER|NEXT_COLUMN|PREV_COLUMN|NEXT_PAGE|PREV_PAGE|TYPE_EDITFIELD|TYPE_PUSHBUTTON|TYPE_DEFAULT)\\b"
+				},
+				{
+					"name": "support.function.tablelayout.wm",
+					"match": "\\b(ENABLE_SHADOWING|WIDTH|HEIGHT|ROWS|FRAME_WIDTH|VERTICAL|OFF|HORIZONTAL|HORIZONTAL_SCROLL_BAR|VERTICAL_SCROLL_BAR|SCROLL_BAR|TITLE_LAYOUT|END|COLUMN_LAYOUT)\\b"
+				},
+				{
 					"name": "support.function.template.wm",
 					"match": "\\b(ATTACH_DISPLAY_TABLE_FIELD|DMS_EDIT_FIELD|DO_FIELD_CHANGE_ACTION|ENABLE_ALL_TEMPLATE_WARNINGS|GET_ADD_FIELD_INFO|GET_CURRENT_FIELD|GET_FIELD_ATTRIBUTE_NAME|GET_FIELD_CACHEID|GET_FIELD_INFO|GET_FORM_FIELD_NAME|GET_MOVE_FIELD_INFO|GET_NEXT_PICKED_FIELD|GET_NEXT_SELECTED_FIELD|GET_PROMPTLINE_FIELD_NAME|LOAD_WINDOW_TEMPLATE|PRINT_FIELD|READ_FIELD_VALUE|SET_CURRENT_FIELD|SET_FIELD_PROMPTLINE|SET_FIELD_SENSITIVE|SET_SUBFIELDS_SENSITIVE|WRITE_FIELD_VALUE)\\b"
 				},
@@ -168,6 +180,10 @@
 				{
 					"name": "support.function.colorcontrol.wm",
 					"match": "\\b(COLOR|COLOR_LTAB|FORCE_DESKTOP_COLORS|GET_NAMED_COLOR|SET_NAMED_COLOR)\\b"
+				},
+				{
+					"name": "support.function.colors.wm",
+					"match": "\\b(BLACK|RED|GREEN|YELLOW|BLUE|MAGENTA|CYAN|WHITE|RGB_COLOR|HSL_COLOR)\\b"
 				},
 				{
 					"name": "support.function.editor.wm",
@@ -287,7 +303,7 @@
 				},
 				{
 					"name": "variable.pdmreplicator.wm",
-					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists)\\b"
+					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists|Csi_projects_history_table)\\b"
 				}
 			]
 		},
