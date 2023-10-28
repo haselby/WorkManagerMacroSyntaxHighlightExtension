@@ -30,13 +30,13 @@
 			"include": "#function-supports"
 		},
 		{
+			"include": "#variables"
+		},
+		{
 			"include": "#macro.function-name-entities"
 		},
 		{
 			"include": "#global-type-storages"
-		},
-		{
-			"include": "#variables"
 		}
 	],
 	"repository": {
@@ -271,6 +271,14 @@
 				}
 			]
 		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.wm",
+					"match": "\\b(?!Csi)[A-Z][a-zA-Z0-9_]*\\b"
+				}
+			]
+		},
 		"macro.function-name-entities": {
 			"patterns": [
 				{
@@ -288,14 +296,6 @@
 				{
 					"name": "storage.global.temp.wm",
 					"match": "\\bDms_return_val[0-9]*\\b"
-				}
-			]
-		},
-		"variables": {
-			"patterns": [
-				{
-					"name": "variable.wm",
-					"match": "\\b(?!Csi)[A-Z][a-zA-Z0-9_]*\\b"
 				}
 			]
 		}
