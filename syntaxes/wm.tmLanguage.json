@@ -279,7 +279,7 @@
 				},
 				{
 					"name": "variable.pdmreplicator.wm",
-					"match": "\\b(Csi_module|Csi_option1|Csi_option2)\\b"
+					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists)\\b"
 				}
 			]
 		},
