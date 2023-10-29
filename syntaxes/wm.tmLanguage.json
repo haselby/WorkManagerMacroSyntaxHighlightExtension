@@ -306,7 +306,7 @@
 			"patterns": [
 				{
 					"name": "variable.hardcoded.wm",
-					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists|Csi_projects_history_table|Csi_replication_item|Csi_deleted_elements)\\b"
+					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_projects_history_table|Csi_projects_history_table_exists|Csi_project_roles_history_table|Csi_project_roles_history_table_exists|Csi_users_history_table|Csi_users_history_table_exists|Csi_replication_item|Csi_deleted_elements)\\b"
 				}
 			]
 		},
