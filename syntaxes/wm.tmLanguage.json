@@ -30,14 +30,21 @@
 			"include": "#function-supports"
 		},
 		{
+			"include": "#hardcoded-variables"
+		},
+		{
+			"include": "#hardcoded-macro-function-name-entities"
+		},
+		{
 			"include": "#variables"
 		},
 		{
-			"include": "#pdmreplicator-macro-function-name-entities"
+			"include": "#global-type-storages"
 		},
 		{
-			"include": "#global-type-storages"
+			"include": "#pdmreplicator-macro-function-name-entities"
 		}
+
 	],
 	"repository": {
 		"comments": {
@@ -295,31 +302,27 @@
 				}
 			]
 		},
+		"hardcoded-variables": {
+			"patterns": [
+				{
+					"name": "variable.hardcoded.wm",
+					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists|Csi_projects_history_table)\\b"
+				}
+			]
+		},
+		"hardcoded-macro-function-name-entities": {
+			"patterns": [
+				{
+					"name": "entity.name.type.macro.hardcoded.wm",
+					"match": "\\b(Csic_dd_get_global_replication_log_name|Csi_dd_get_global_replication_log_name|Csi_system_config_utilities|Csi_system_config_create_entry|Csi_system_config_delete_entry|Csi_system_config_find_entries|Csi_system_config_find_entry|Csi_update_deleted_elements|Csic_update_deleted_elements|Users_add|Set_dd_enumstr_default|csi_pdmi_lib_input_dir|Csic_pdmi_lib_input_dir|Csi_pdmi_lib_input_dir|custom|replication_delete|ui_cust)\\b"
+				}
+			]
+		},
 		"variables": {
 			"patterns": [
 				{
 					"name": "variable.wm",
 					"match": "\\b(?!Csi)(?!Set_dd)[A-Z][a-z0-9_]*\\b"
-				},
-				{
-					"name": "variable.pdmreplicator.wm",
-					"match": "\\b(Csi_module|Csi_option1|Csi_option2|Csi_project_roles_history_table|Csi_project_roles_history_table_exists|Csi_projects_history_table)\\b"
-				}
-			]
-		},
-		"pdmreplicator-macro-function-name-entities": {
-			"patterns": [
-				{
-					"name": "entity.name.type.macro1.wm",
-					"match": "\\bCsi(c)?_dd_g[^l][a-km-z][a-z0-9_]*\\b"
-				},
-				{
-					"name": "entity.name.type.macro2.wm",
-					"match": "\\bCsi(c)?_dd_[^g][a-fh-z][a-z0-9_]*\\b"
-				},
-				{
-					"name": "entity.name.type.macro3.wm",
-					"match": "\\b(Csi_system_config_utilities|Csi_system_config_create_entry|Csi_system_config_delete_entry|Csi_system_config_find_entries|Csi_system_config_find_entry|Csi_update_deleted_elements|Csic_update_deleted_elements|Users_add|Set_dd_enumstr_default|csi_pdmi_lib_input_dir|Csic_pdmi_lib_input_dir|Csi_pdmi_lib_input_dir|custom|replication_delete|ui_cust)\\b"
 				}
 			]
 		},
@@ -332,6 +335,18 @@
 				{
 					"name": "storage.global.temp.wm",
 					"match": "\\bDms_return_val[0-9]*\\b"
+				}
+			]
+		},
+		"pdmreplicator-macro-function-name-entities": {
+			"patterns": [
+				{
+					"name": "entity.name.type.macro1.wm",
+					"match": "\\bCsi(c)?_dd_g[^l][a-km-z][a-z0-9_]*\\b"
+				},
+				{
+					"name": "entity.name.type.macro2.wm",
+					"match": "\\bCsi(c)?_dd_[^g][a-fh-z][a-z0-9_]*\\b"
 				}
 			]
 		}
